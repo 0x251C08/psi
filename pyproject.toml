@@ -1,0 +1,57 @@
+[project]
+name = "psi"
+version = "0.1.0"
+description = "Developer quality-of-life tool for codebase inspection and project initialization"
+readme = "README.md"
+authors = [
+    { name = "0x251C08", email = "armaansn.dev@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "typer>=0.12.0",
+    "rich>=13.7.0",
+    "textual>=0.52.0",
+    "gitpython>=3.1.40",
+    "pyyaml>=6.0.1",
+    "tomli>=2.0.1; python_version < '3.11'",
+    "tomli-w>=1.0.0",
+    "packaging>=24.0",
+    "platformdirs>=4.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-mock>=3.14.0",
+    "ruff>=0.5.0",
+    "mypy>=1.10.0",
+]
+
+[project.scripts]
+psi = "psi.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+exclude = ["src/psi/templates/data/**"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "W", "C90", "PL", "RUF", "T20"]
+ignore = ["T201"]
+
+[tool.mypy]
+python_version = "3.13"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+exclude = ["src/psi/templates/data/.*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+norecursedirs = ["src/psi/templates/data", ".venv", "__pycache__"]

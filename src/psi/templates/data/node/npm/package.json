@@ -1,0 +1,17 @@
+{
+  "name": "${project_name}",
+  "version": "0.1.0",
+  "description": "A Node.js package",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  }
+}
