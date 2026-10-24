@@ -1,0 +1,27 @@
+pkgbase = psi
+	pkgdesc = Developer quality-of-life tool for codebase inspection and project initialization
+	pkgver = 0.1.0
+	pkgrel = 1
+	url = https://github.com/0x251C08/psi
+	arch = any
+	license = MIT
+	checkdepends = python-pytest
+	checkdepends = python-pytest-mock
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
+	makedepends = python-uv-build
+	depends = python>=3.13
+	depends = python-typer>=0.12.0
+	depends = python-rich>=13.7.0
+	depends = python-textual>=0.52.0
+	depends = python-gitpython>=3.1.40
+	depends = python-pyyaml>=6.0.1
+	depends = python-tomli>=2.0.1
+	depends = python-tomli-w>=1.0.0
+	depends = python-packaging>=24.0
+	depends = python-platformdirs>=4.2.0
+	source = https://github.com/0x251C08/psi/archive/v0.1.0/psi-0.1.0.tar.gz
+	sha256sums = 32e3c16d68955280cb67f5f97fb032ef511732ced0a84305dad6e73e1b8b3a50
+
+pkgname = psi

@@ -1,0 +1,16 @@
+# Build artifacts
+pkg/
+src/
+*.pkg.tar.zst
+*.pkg.tar.xz
+*.pkg.tar.gz
+*.log
+
+# Downloaded sources
+*.tar.gz
+*.whl
+
+# Editor files
+*~
+*.swp
+*.swo

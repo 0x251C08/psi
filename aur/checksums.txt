@@ -1,0 +1,32 @@
+# Psi v0.1.0 - Checksums for AUR and verification
+# Generated on: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+## Source Distribution (psi-0.1.0.tar.gz)
+SHA256: 32e3c16d68955280cb67f5f97fb032ef511732ced0a84305dad6e73e1b8b3a50
+SHA384: 7a4fba159bbfdf5d3ec298af9c9aca8361d92f82f413b34686a73cecc6dfc82e1066ac4c26a51ed1c40cdc01a59dff7a
+SHA1:   dc7a15710a1d6e79a2b5f22f39beed7ad03d1d7d
+MD5:    18b56dc216a62d6f8b433b5dfab9589e
+
+## Wheel Distribution (psi-0.1.0-py3-none-any.whl)
+SHA256: 6975aeb6e0b44ec01700572cc61f8488901cb43b6ced783dc3f85ea79b4ed0de
+SHA384: 161b9193bf628bc389ba1a374f0eda38baeb962229a1a2a1a2e16a55a7277a81ea3387f31d88bd19f31b05a034606dd5
+SHA1:   2d2281c7c5dbe15b2222507e1b4dfe35627cf3c8
+MD5:    14124160725044ea0df9d756e120020a
+
+## Verification Commands
+# Verify source tarball:
+#   sha256sum -c <<< "32e3c16d68955280cb67f5f97fb032ef511732ced0a84305dad6e73e1b8b3a50  psi-0.1.0.tar.gz"
+#   sha384sum -c <<< "7a4fba159bbfdf5d3ec298af9c9aca8361d92f82f413b34686a73cecc6dfc82e1066ac4c26a51ed1c40cdc01a59dff7a  psi-0.1.0.tar.gz"
+#   sha1sum   -c <<< "dc7a15710a1d6e79a2b5f22f39beed7ad03d1d7d  psi-0.1.0.tar.gz"
+#   md5sum    -c <<< "18b56dc216a62d6f8b433b5dfab9589e  psi-0.1.0.tar.gz"
+
+# Verify wheel:
+#   sha256sum -c <<< "6975aeb6e0b44ec01700572cc61f8488901cb43b6ced783dc3f85ea79b4ed0de  psi-0.1.0-py3-none-any.whl"
+#   sha384sum -c <<< "161b9193bf628bc389ba1a374f0eda38baeb962229a1a2a1a2e16a55a7277a81ea3387f31d88bd19f31b05a034606dd5  psi-0.1.0-py3-none-any.whl"
+#   sha1sum   -c <<< "2d2281c7c5dbe15b2222507e1b4dfe35627cf3c8  psi-0.1.0-py3-none-any.whl"
+#   md5sum    -c <<< "14124160725044ea0df9d756e120020a  psi-0.1.0-py3-none-any.whl"
+
+## Download URLs
+# Source: https://github.com/0x251C08/psi/archive/v0.1.0/psi-0.1.0.tar.gz
+# Wheel:  https://github.com/0x251C08/psi/releases/download/v0.1.0/psi-0.1.0-py3-none-any.whl
+# Release: https://github.com/0x251C08/psi/releases/tag/v0.1.0
