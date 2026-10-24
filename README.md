@@ -10,12 +10,40 @@ Developer quality-of-life tool for codebase inspection and project initializatio
 
 ## Installation
 
+### Method 1: Install from Source (Recommended for Development)
+
 ```bash
-# From source
+# Clone the repository
+git clone https://github.com/0x251C08/psi.git
+cd psi
+
+# Install with uv (fast, recommended)
 uv pip install -e .
 
 # Or with pip
 pip install -e .
+```
+
+### Method 2: Install Binary Release (Standalone)
+
+Download the latest release from [GitHub Releases](https://github.com/0x251C08/psi/releases) and install:
+
+```bash
+# Linux/macOS (using wheel)
+uv pip install psi-0.1.0-py3-none-any.whl
+
+# Or with pip
+pip install psi-0.1.0-py3-none-any.whl
+```
+
+### Method 3: Install via uvx (No Installation Required)
+
+```bash
+# Run directly without installing
+uvx --from git+https://github.com/0x251C08/psi psi --help
+
+# Or run a specific command
+uvx --from git+https://github.com/0x251C08/psi psi inspect /path/to/project
 ```
 
 ## Usage
@@ -125,6 +153,9 @@ uv run mypy .
 
 # Run CLI
 uv run psi --help
+
+# Build distribution packages
+uv build
 ```
 
 ## License
